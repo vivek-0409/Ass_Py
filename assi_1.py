@@ -6,7 +6,7 @@ print("Sum:", total)
 
 #2. Count occurrences of a substring in a string
 string = "hello hello world"
-print(string.count("hello"))    # Output: 2
+print(string.count("hello"))    
 
 
 #3. Count each word in a sentence
@@ -51,17 +51,15 @@ print("Updated sentence:", replace_not_poor(sentence))
 #7.  Store user details in tuple using class
 import math
 
-# Take input from user
 num1 = int(input("Enter first number: "))
 num2 = int(input("Enter second number: "))
 
-# Calculate GCD
 gcd = math.gcd(num1, num2)
 
-# Print result
+
 print(f"The GCD of {num1} and {num2} is: {gcd}")
 
-# Function to find GCD manually
+
 def find_gcd(x, y):
     while y:
         x, y = y, x % y
@@ -101,7 +99,6 @@ print(n[1])
 # 10. get unique values from a list. 
 nums = list(map(int, input("Enter list elements: ").split()))
 
-# Remove duplicates but keep original order
 unique = []
 for num in nums:
     if num not in unique:
@@ -112,35 +109,28 @@ print("Unique values (ordered):", unique)
 
 # 11. unzip a list of tuples into individual lists.
 
-# List of tuples
 pairs = [(1, 'a'), (2, 'b'), (3, 'c')]
 
-# Unzipping using zip and *
 list1, list2 = zip(*pairs)
 
-# Convert to list (optional)
 list1 = list(list1)
 list2 = list(list2)
 
-# Output
+
 print("First list:", list1)
 print("Second list:", list2)
 
 # 12. convert a list of tuples into a dictionary 
 
-# List of tuples
 tuple_list = [('a', 1), ('b', 2), ('c', 3)]
 
-# Convert to dictionary using dict()
 dictionary = dict(tuple_list)
 
-# Output the result
 print("Converted dictionary:", dictionary)       
 
 
 # 13.sort a dictionary (ascending /descending) by value. 
 
-# Original dictionary
 my_dict = {'apple': 5, 'banana': 2, 'cherry': 8, 'date': 3}
 
 asc_sorted = dict(sorted(my_dict.items(), key=lambda item: item[1]))
